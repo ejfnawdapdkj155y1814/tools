@@ -46,7 +46,4 @@ ipconfig /release > nul
 ipconfig /flushdns > nul
 ipconfig /renew > nul
 ipconfig /flushdns > nul
-WMIC PATH WIN32_NETWORKADAPTER WHERE PHYSICALADAPTER=TRUE CALL DISABLE > nul 2>&1
-WMIC PATH WIN32_NETWORKADAPTER WHERE PHYSICALADAPTER=TRUE CALL ENABLE > nul 2>&1
-net stop winmgmt /y > nul
-net start winmgmt > nul
+
