@@ -35,15 +35,4 @@
  SET RNDGEN2=!GEN2:~%RND2%,1!
  IF "!COUNT!"  EQU "2" (SET MAC=!MAC!!RNDGEN2!) ELSE (SET MAC=!MAC!!RNDGEN!)
  IF !COUNT!  LEQ 11 GOTO MACLOOP 
-netsh winsock reset > nul
-netsh winsock reset catalog > nul
-netsh int ip reset > nul
-netsh advfirewall reset > nul
-netsh int reset all > nul
-netsh int ipv4 reset > nul
-netsh int ipv6 reset > nul
-ipconfig /release > nul
-ipconfig /flushdns > nul
-ipconfig /renew > nul
-ipconfig /flushdns > nul
 
